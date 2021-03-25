@@ -111,3 +111,107 @@ investment type. This is a part of its broader strategy to invest where most
 investments are occurring. 
  
 1. Teclov wants to see the top nine countries which have received the highest 
+total funding (across ALL sectors for the chosen investment type)
+2. For the chosen investment type, make a data frame named top9 with the top 
+nine countries (based on the total investment amount each country has 
+received)
+ 
+Identify the top three English-speaking countries in the data frame top9. 
+ 
+Results Expected: All codes for data frame top9. Fill out Table 3.1. 
+ 
+Table 3.1: Analysing the Top 3 English-Speaking Countries  
+Now you also know the three most investment-friendly countries and the most suited 
+funding type for Teclov. Let us now focus on finding the best sectors in these 
+countries. 
+ 
+Problem 4: Sector Analysis 1 
+This is the third goal of analysis — sector analysis. 
+ 
+When we say sector analysis, we refer to one of the eight main sectors listed in the 
+mapping file (note that ‘Other’ is one of the eight main sectors; also, there are eight 
+sectors if you consider the category 'Blanks' as a missing value). This is to simplify 
+the analysis by grouping the numerous category lists (named ‘category_list’) in the 
+mapping file. For example, in the mapping file, category_lists such as ‘3D’, ‘3D 
+Printing’, ‘3D Technology’, etc. are mapped to the main sector ‘Manufacturing’. 
+ 
+ 1. Top English-speaking country 
+ 2. Second English-speaking 
+country
+ 3. Third English-speaking 
+countryAlso, for some companies, the category list is a list of multiple sub-sectors separated 
+by a pipe (vertical bar |). For example, one of the companies’ category_list is 
+Application Platforms|Real Time|Social Network Media. 
+ 
+You discuss with the CEO and come up with the business rule that the first string 
+before the vertical bar will be considered the primary sector. In the example above, 
+‘Application Platforms’ will be considered the primary sector. 
+1. Extract the primary sector of each category list from the category_list 
+column
+2. Use the mapping file 'mapping.csv' to map each primary sector to one of the 
+eight main sectors (Note that ‘Others’ is also considered one of the main 
+sectors)
+Expected Results: Code for a merged data frame with each primary sector mapped 
+to its main sector (the primary sector should be present in a separate column). 
+ 
+Problem 5: Sector Analysis 2 
+Now you have a data frame with each company’s main sector (main_sector) mapped 
+to it. When we say sector analysis, we refer to one of the eight main sectors. 
+ Also, you know the top three English speaking countries and the most suitable 
+funding type for Teclov. Let’s call the three countries 'Country 1', 'Country 2' and 
+'Country 3' and the funding type 'FT'. 
+ 
+Also, the range of funding preferred by Teclov is 5 to 15 million USD. 
+ 
+Now, the aim is to find out the most heavily invested main sectors in each of the 
+three countries (for funding type FT and investments range of 5-15 M USD). 
+1. Create three separate data frames D1, D2 and D3 for each of the three 
+countries containing the observations of funding type FT falling within the 5-15 
+million USD range. The three data frames should contain:
+! All the columns of the master_frame along with the primary sector and the 
+main sector
+! The total number (or count) of investments for each main sector in a separate 
+column
+! The total amount invested in each main sector in a separate column
+Using the three data frames, you can calculate the total number and amount of 
+investments in each main sector. 
+ Result Expected 
+1. Three data frames D1, D2 and D3
+2. Table 5.1: Based on the analysis of the sectors, which main sectors and 
+countries would you recommend Teclov to invest in? Present your conclusions 
+in the presentation. The conclusions are subjective (i.e. there may be no ‘one 
+right answer’), but it should be based on the basic strategy — invest in sectors 
+where most investments are occurring. 
+ 
+Note: In the following table, all the observations refer to investments of the 
+type FT within 5-15 M USD range. 
+ 
+Table 5.1 : Sector-wise Investment Analysis 
+ Country 1 Country 2 Country 3
+ 1. Total number of investments 
+(count)
+ 2. Total amount of investment 
+(USD)
+ 3. Top sector (based on count of 
+investments) 
+Problem 6: Plots 
+As a final step, you have to present your findings to the CEO of Teclov. Specifically, 
+she wants to see the following plots: 
+ 4. Second-best sector (based on 
+count of investments)
+ 5. Third-best sector (based on 
+count of investments)
+ 6. Number of investments in the 
+top sector (refer to point 3)
+ 7. Number of investments in the 
+second-best sector (refer to point 
+4)
+ 8. Number of investments in the 
+third-best sector (refer to point 5)
+ 9. For the top sector count-wise 
+(point 3), which company received 
+the highest investment?
+ 10. For the second-best sector 
+count-wise (point 4), which 
+company received the highest 
+investment?
